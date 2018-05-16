@@ -22,8 +22,6 @@ void quickSort(char **strings, int esq, int dir){
     char *x;
     char temp[50];
 
-
-     //pega a string do meio como o pivo
     if(j - i >= 1){
         x = strings[i];
         strcpy(temp, strings[esq]);
