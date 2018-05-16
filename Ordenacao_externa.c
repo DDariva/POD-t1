@@ -189,7 +189,6 @@ void ordenaBlocos(void){
             remove("part0.txt");
             part0=fopen("part0.txt","w+");
             quickSort(strings, 0, n-1);
-            quickSort(strings, 0, n-1);
             for (i = 0; i < n; i++)
             {
                 fprintf(part0,"%s ",strings[i]);
@@ -225,7 +224,6 @@ void ordenaBlocos(void){
         fclose(part1);
         if(!feof(part1)){
             remove("part1.txt");
-            quickSort(strings, 0, n-1);
             quickSort(strings, 0, n-1);
             part1=fopen("part1.txt","w+");
             for (i = 0; i < n; i++)
@@ -264,7 +262,6 @@ void ordenaBlocos(void){
         if(!feof(part2)){
             remove("part2.txt");    
             quickSort(strings, 0, n-1);
-            quickSort(strings, 0, n-1);
             part2=fopen("part2.txt","w+");
             for (i = 0; i < n; i++)
             {
@@ -301,7 +298,6 @@ void ordenaBlocos(void){
         fclose(part3);
         if(!feof(part3)){
             remove("part3.txt");
-            quickSort(strings, 0, n-1);
             quickSort(strings, 0, n-1);
             part3=fopen("part3.txt","w+");
             for (i = 0; i < n; i++)
